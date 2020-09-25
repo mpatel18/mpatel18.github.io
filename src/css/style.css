@@ -44,6 +44,18 @@ section {
     position: relative;
 }
 
+.fwh-slide {
+    height: 100vh;
+    background-color: lightgray;
+    box-sizing: border-box;
+
+}
+
+.fwh-slide--bg-black {
+    background-color: black;
+    color: white;
+}
+
 @media screen and (max-width: 1080px){
     .nav-links {
         width: 35%;
