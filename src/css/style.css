@@ -37,3 +37,15 @@ nav {
     font-weight: bold;
     font-size: 14px;
 }
+
+@media screen and (max-width: 1080px){
+    .nav-links {
+        width: 35%;
+    }
+}
+ 
+@media screen and (max-width: 768px){
+    .nav-links {
+        display: none; 
+    }
+}
