@@ -38,14 +38,20 @@ nav {
     font-size: 14px;
 }
 
-section {
+section h2 {
+    text-align: center;
+    position: relative;
+}
+
+section p{
+    padding: 10%;
     text-align: center;
     height: 10em;
     position: relative;
 }
 
 .fwh-slide {
-    height: 100vh;
+    height: 50vh;
     background-color: lightgray;
     box-sizing: border-box;
 
