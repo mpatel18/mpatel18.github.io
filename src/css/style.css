@@ -38,6 +38,12 @@ nav {
     font-size: 14px;
 }
 
+section {
+    text-align: center;
+    height: 10em;
+    position: relative;
+}
+
 @media screen and (max-width: 1080px){
     .nav-links {
         width: 35%;
