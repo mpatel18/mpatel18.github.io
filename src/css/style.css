@@ -39,14 +39,16 @@ nav {
 }
 
 section h2 {
+    padding: 10px;
     text-align: center;
     position: relative;
 }
 
-section p{
+section {
     padding: 10%;
     text-align: center;
     height: 10em;
+    font-size: 20px; 
     position: relative;
 }
 
