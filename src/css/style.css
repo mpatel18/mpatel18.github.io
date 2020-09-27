@@ -8,6 +8,15 @@ html {
     scroll-behavior: smooth;
 }
 
+footer {
+    padding: 1%;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
 nav {
     display: flex;
     justify-content: space-around;
