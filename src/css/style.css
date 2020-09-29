@@ -8,8 +8,20 @@ html {
     scroll-behavior: smooth;
 }
 
-footer {
-    padding: 1%;
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.conent-wrapper {
+    padding-bottom: 2.5rem;
+}
+
+ footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
     background-color: black;
 }
 
@@ -61,61 +73,74 @@ nav {
     font-size: 14px;
 }
 
-.fwh-slide--bg-black p {
+.fwh-slide-home p {
     line-height: 25px;
     text-align: center;
 }
 
-.fwh-slide--bg-black h2 {
+.fwh-slide-home h2 {
     text-align: center;
     font-size: 30px;
 }
 
-.slideshow-container{
-    text-align: center;
-}
-
-.fwh-slide {
-    height: 50vh;
+.fwh-slide-project,
+.fwh-slide-contact {
+    width: 100%;
+    height: auto;
     background-color: lightgray;
-    box-sizing: border-box;
-
+    color: black;
 }
 
-.fwh-slide--bg-black {
+.fwh-slide-project {
     padding: 15%;
+}
+
+.fwh-slide-contact {
+    padding: 20%;
+}
+
+.fwh-slide-projectHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.fwh-slide-home,
+.fwh-slide-services {
+    width: 100%;
     background-color: black;
     color: white;
 }
 
-@media screen and (max-width: 1080px){
+.fwh-slide-home {
+    padding: 20%;
+}
+
+.fwh-slide-services {
+    padding: 20%;
+}
+
+.project--1, 
+.project--2{
+    width: 450px;
+    height: 300px;
+    margin: 15px;
+    /* border: solid black; 
+    box-sizing: border-box; */
+    font-size: 22px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 1450px){
     .nav-links {
         width: 35%;
     }
 }
-
-@media screen and (max-width: 1024px){
-    .fwh-slide p {
-        font-size: 2vh;
-    }
-    .fwh-slide {
-        padding: 15%;
-        text-align: center;
-        font-size: large;
-    }
-}
  
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1000px){
     .nav-links {
         display: none; 
-    }
-    .fwh-slide p {
-        font-size: 2vh;
-        line-height: 15px;
-    }
-    .fwh-slide {
-        padding: 20%;
-        text-align: center;
-        font-size: large;
     }
 }
