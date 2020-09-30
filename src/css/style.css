@@ -66,11 +66,6 @@ html {
     font-size: 30px;
 }
 
-.content-project {
-    width: 100%;
-    height: auto;
-}
-
 .content-projectHolder {
     display: flex;
     flex-direction: row;
