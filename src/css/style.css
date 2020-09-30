@@ -1,11 +1,15 @@
-/* *{
+*{
     margin: 0px; 
     padding: 0px; 
     box-sizing: border-box;
-} */
+}
 
 html {
     scroll-behavior: smooth;
+}
+
+.content-wrapper {
+    min-width: 500px;
 }
 
 .footer {
@@ -16,7 +20,6 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 0vh;
     font-family: 'Noto Sans', sans-serif;
     background-color: white;
     position: relative;
@@ -48,7 +51,7 @@ html {
     font-size: 14px;
 }
 
-.content-contact {
+.content-contact h2 {
     text-decoration: underline;
 }
 
@@ -63,8 +66,7 @@ html {
     font-size: 30px;
 }
 
-.content-project,
-.content-contact {
+.content-project {
     width: 100%;
     height: auto;
 }
@@ -79,19 +81,21 @@ html {
 .project--1, 
 .project--2{
     width: 500px;
-    height: 300px;
+    height: 310px;
     font-size: 14px;
-    font-family: 'Noto Sans', sans-serif;
+    margin: 1vh;
     text-align: center;
+    border: 5px solid black;
 }
 
 .project-caption {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-family: 'Noto Sans', sans-serif;
 }
  
-@media screen and (max-width: 925px){
+@media screen and (max-width: 1025px){
     .nav-links {
         display: none; 
     }
