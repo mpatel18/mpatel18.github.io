@@ -48,28 +48,28 @@ html {
     font-size: 14px;
 }
 
-.fwh-slide-contact {
+.content-contact {
     text-decoration: underline;
 }
 
-.fwh-slide-home p,
-.fwh-slide-contact p {
+.content-home p,
+.content-contact p {
     text-align: center;
 }
 
-.fwh-slide-home h2,
-.fwh-slide-contact h2 {
+.content-home h2,
+.content-contact h2 {
     text-align: center;
     font-size: 30px;
 }
 
-.fwh-slide-project,
-.fwh-slide-contact {
+.content-project,
+.content-contact {
     width: 100%;
     height: auto;
 }
 
-.fwh-slide-projectHolder {
+.content-projectHolder {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
