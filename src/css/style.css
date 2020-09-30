@@ -8,14 +8,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     position: relative;
     min-height: 100vh;
 }
 
 .conent-wrapper {
     padding-bottom: 0rem;
-}
+} */
 
  /* footer {
     position: fixed;
@@ -29,7 +29,7 @@ footer p {
     text-align: center;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -108,7 +108,7 @@ nav {
 .fwh-slide-projectHolder {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: wrap;
 }
 
@@ -128,7 +128,7 @@ nav {
     height: 300px;
     /* border: solid black; 
     box-sizing: border-box; */
-    font-size: 22px;
+    font-size: 14px;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
 }
