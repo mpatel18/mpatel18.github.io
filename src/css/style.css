@@ -9,7 +9,7 @@ html {
 }
 
 .content-wrapper {
-    min-width: 500px;
+    min-width: 520px;
 }
 
 .footer {
@@ -81,6 +81,17 @@ html {
     margin: 1vh;
     text-align: center;
     border: 5px solid black;
+}
+
+.shortcuts {
+    text-align: center;
+    font-size: 20px;
+}
+
+.github,
+.google,
+.linkedin {
+    color: black;
 }
 
 .project-caption {
