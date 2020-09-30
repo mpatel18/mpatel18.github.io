@@ -1,8 +1,8 @@
-*{
+/* *{
     margin: 0px; 
     padding: 0px; 
     box-sizing: border-box;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -26,7 +26,7 @@ html {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 25%;
+    width: 35%;
 }
  
 .nav-links li{
@@ -84,14 +84,8 @@ html {
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
 }
-
-@media screen and (max-width: 1450px){
-    .nav-links {
-        width: 35%;
-    }
-}
  
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 768px){
     .nav-links {
         display: none; 
     }
