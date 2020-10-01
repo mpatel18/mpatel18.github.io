@@ -98,6 +98,16 @@ html {
     font-size: 25px;
 }
 
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.25%;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0.85;
+}
+
 .github,
 .google,
 .linkedin {
