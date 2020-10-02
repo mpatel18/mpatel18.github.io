@@ -58,6 +58,7 @@ html {
 
 .content-home p{
     padding-bottom: 5px;
+    font-family: 'Piazzolla', serif;
 }
 
 .content-home h2,
@@ -126,7 +127,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Piazzolla', serif;
 }
  
 @media screen and (max-width: 1025px){
