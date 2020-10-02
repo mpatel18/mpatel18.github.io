@@ -9,7 +9,7 @@ html {
 }
 
 .content-wrapper {
-    min-width: 520px;
+    min-width: 700px;
 }
 
 .footer {
@@ -89,8 +89,8 @@ html {
 
 .project--1, 
 .project--2{
-    width: 500px;
-    height: 310px;
+    width: 700px;
+    height: 450px;
     font-size: 14px;
     margin: 1vh;
     text-align: center;
