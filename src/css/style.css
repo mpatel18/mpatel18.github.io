@@ -108,6 +108,11 @@ button {
     opacity: 0.85;
 }
 
+.prev, .next {
+    cursor: pointer;
+    text-align: center;
+}
+
 .github,
 .google,
 .linkedin {
@@ -117,7 +122,7 @@ button {
 .project-caption {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: 'Noto Sans', sans-serif;
 }
  
