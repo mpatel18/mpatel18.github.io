@@ -31,6 +31,7 @@ html {
 .nav-links {
     display: flex;
     justify-content: space-around;
+    user-select: none;
     width: 30%;
 }
  
@@ -52,6 +53,7 @@ html {
     letter-spacing: 0px;
     font-size: 14px;
     cursor: pointer;
+    user-select: none;
 }
 
 .content-home p{
@@ -111,6 +113,7 @@ button {
 .prev, .next {
     cursor: pointer;
     text-align: center;
+    user-select: none;
 }
 
 .github,
