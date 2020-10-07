@@ -88,7 +88,8 @@ html {
 }
 
 .project--1, 
-.project--2{
+.project--2,
+.project--3{
     width: 700px;
     height: 450px;
     font-size: 14px;
@@ -102,7 +103,7 @@ html {
     font-size: 25px;
 }
 
-button {
+.resume_btn {
     background-color: black;
     color: white;
     border: none;
@@ -110,6 +111,7 @@ button {
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     opacity: 0.85;
+    cursor: pointer;
 }
 
 .prev, .next {
@@ -128,6 +130,14 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: 'Piazzolla', serif;
+}
+
+.source_code {
+    background-color: black;
+    color: white;
+    border: 0.1px solid white;
+    cursor: pointer;
     font-family: 'Piazzolla', serif;
 }
  
