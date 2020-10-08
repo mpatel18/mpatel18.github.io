@@ -57,9 +57,14 @@ html {
     user-select: none;
 }
 
+.content-home h2 { 
+    animation: text 3s 1;
+}
+
 .content-home p{
     padding-bottom: 5px;
     font-family: 'Piazzolla', serif;
+    display: block;
 }
 
 .content-home h2,
@@ -139,6 +144,17 @@ html {
     border: 0.1px solid white;
     cursor: pointer;
     font-family: 'Piazzolla', serif;
+}
+
+@keyframes text {
+    0%{
+        color: white;
+        margin-bottom: -15px;
+    }
+    30% {
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
 }
  
 @media screen and (max-width: 1025px){
