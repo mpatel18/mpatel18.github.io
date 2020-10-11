@@ -198,10 +198,9 @@ html {
 @keyframes text {
     0%{
         color: darkslategray;
-        margin-bottom: -15px;
+        margin-bottom: -20px;
     }
     30% {
-        letter-spacing: 3px;
         margin-bottom: 10px;
     }
 }
