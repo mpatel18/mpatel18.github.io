@@ -19,22 +19,18 @@
             <ul class ="nav-links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Projects">Portfolio</a></li>
+                <li><a href="#About">About</a></li>
                 <li><a href="#Connect">Connect</a></li>
             </ul>
         </div>
         <div class ="content-home" id ="Home"> 
             <h2>Hi I'm Meekit Patel,<br></h2>
-            <p> An up incoming full stack web developer with a passion for
-            responsive website design and features for the next generation of
-            web apps/websites.  
-            </p>
-            <a href="/src/files/Meekit Patel - Resume - 2020.10.7.pdf" download="Meekit_Patel_Resume">
-                <button class ="resume_btn" type ="submit">Resume</button>
-            </a>
+            <p>A full stack web developer</p>
         </div>
         <div class ="content-project" id ="Projects"> 
+            <h1>Portfolio</h1>
             <div class ="content-projectHolder">
-                <div class ="project--1">
+                <div data-aos= "fade-right" class ="project--1">
                     <div class ="slideshow">
                         <img name ="cover_crop_img" src ="src/img/cover_crop_img1.PNG" width ="100%">
                         <a class="prev" onclick="slideTo('cover_crop', -1)">&#10094;</a>
@@ -45,7 +41,7 @@
                         <p style="font-size: 13px;">&#9746 Source Code Private</p>
                     </div>
                 </div>
-                <div class ="project--2">
+                <div data-aos= "fade-left" class ="project--2">
                     <div class ="slideshow">
                         <img name ="hexconnect_img" src ="src/img/hexconnect_img1.PNG" width ="100%">
                         <a class="prev" onclick="slideTo('hexconnect', -1)">&#10094;</a>
@@ -56,7 +52,7 @@
                         <p style="font-size: 13px;">&#9746 Source Code Private</p>
                     </div>
                 </div>
-                <div class ="project--3">
+                <div data-aos= "fade-right" class ="project--3">
                     <div class ="slideshow">
                         <img name ="sevice_site_template" src ="src/img/service_site_template_img1.PNG" width ="100%">
                     </div>
@@ -66,6 +62,30 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <h1 id ="About">About Me</h1>
+        <div class="content-about">
+            <div data-aos="fade-down" class="about">
+                <img src="/src/img/portrait.png" width="20%"></img>
+                <div>
+                    <p>
+                        I'm a very passosinate developer that enjoyes making interesting and unqiue 
+                        websites. I've down work in both frontend and backend web design for multiple differnet 
+                        projects mostly personal ones. I also have a hobby in game development from designing fun new 
+                        games to implmenting new technologies. 
+                    </p>
+                    <a href="/src/files/Meekit Patel - Resume - 2020.10.7.pdf" download="Meekit_Patel_Resume">
+                        <button class ="resume_btn" type ="submit">Resume</button>
+                    </a>
+                </div>
+            </div>
+            <!-- <div data-aos ="fade-down" class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </div> -->
         </div>
         <div class ="content-connect" id ="Connect">
             <h2>Connect With Me</h2>

@@ -1,6 +1,6 @@
 *{
-    margin: 0px; 
-    padding: 0px; 
+    margin: 0 auto; 
+    padding: 0 auto; 
     box-sizing: border-box;
 }
 
@@ -10,11 +10,12 @@ html {
 
 .content-wrapper {
     min-width: 700px;
+    width: 100%;
 }
 
 .footer {
     text-align: center;
-    background-color: black;
+    background-color: darkslategray;
     color: white;
 }
 
@@ -23,7 +24,7 @@ html {
     justify-content: space-around;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
-    background-color: black;
+    background-color: darkslategray;
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -33,7 +34,7 @@ html {
     display: flex;
     justify-content: space-around;
     user-select: none;
-    width: 30%;
+    width: 40%;
 }
  
 .nav-links li{
@@ -57,26 +58,43 @@ html {
     user-select: none;
 }
 
-.content-home,
-.content-project {
-    padding: 10%;
+.content-home {
+    padding: 20%;
+    position: relative;
+    /* height: 100vh; */
+    color: white;
+}
+
+.content-home::before {
+    background-image: url(/src/img/header.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.95;
 }
 
 .content-connect {
-    padding: 20%;
+    padding: 15%;
 }
 
 .content-home h2 { 
+    font-size: 60px;
+    position: relative;
     animation: text 3s 1;
 }
 
 .content-home p{
+    font-size: 25px;
     padding-bottom: 5px;
     font-family: 'Piazzolla', serif;
     display: block;
+    position: relative;
 }
 
-.content-home h2,
 .content-connect h2,
 .content-project h2 {
     font-size: 30px;
@@ -84,13 +102,35 @@ html {
 
 .content-home,
 .content-project,
-.content-connect  {
+.content-connect,
+.content-about {
+    width: 100%;
     text-align: center;
 }
 
+.content-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#About {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.about {
+    width: 60%;
+    float: left;
+}
+
 .content-project {
-    color: white;
-    background-color: black;
+    overflow: hidden;
+    padding: 10%;
+    color: black;
+    background-color: white;
 }
 
 .content-projectHolder {
@@ -148,20 +188,20 @@ html {
 }
 
 .source_code {
-    background-color: black;
-    color: white;
-    border: 0.1px solid white;
+    background-color: white;
+    color: black;
+    border: 0.1px solid black;
     cursor: pointer;
     font-family: 'Piazzolla', serif;
 }
 
 @keyframes text {
     0%{
-        color: white;
+        color: darkslategray;
         margin-bottom: -15px;
     }
     30% {
-        letter-spacing: 1px;
+        letter-spacing: 3px;
         margin-bottom: 10px;
     }
 }
