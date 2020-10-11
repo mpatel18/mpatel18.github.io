@@ -81,10 +81,15 @@ html {
     padding: 15%;
 }
 
+.content-connect h1 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .content-home h2 { 
     font-size: 60px;
     position: relative;
     animation: text 3s 1;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .content-home p{
@@ -119,11 +124,17 @@ html {
     text-align: center;
     text-decoration: underline;
     padding-bottom: 10px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .about {
-    width: 60%;
+    width: 50%;
     float: left;
+}
+
+.about p {
+    font-family: 'Piazzolla', serif;
+    font-size: 20px;
 }
 
 .content-project {
@@ -131,6 +142,10 @@ html {
     padding: 10%;
     color: black;
     background-color: white;
+}
+
+.content-project h1 {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .content-projectHolder {
