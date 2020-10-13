@@ -17,6 +17,7 @@ html {
     text-align: center;
     background-color: darkslategray;
     color: white;
+    padding: 0.5%;
 }
 
 .navbar {
@@ -46,7 +47,7 @@ html {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
 }
  
 .logo{
@@ -67,14 +68,14 @@ html {
 
 .content-home::before {
     background-image: url(/src/img/header.png);
-    background-size: cover;
+    background-size: 100% 100%;
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.95;
+    opacity: 0.91;
 }
 
 .content-connect {
@@ -148,18 +149,59 @@ html {
 
 .content-project h1 {
     font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
     padding-top: 10%;
-    padding-bottom: 10px;
+    padding-bottom: 5%;
 }
 
-.content-projectHolder {
+#Project1,
+#Project2,
+#Project3 {
+    position: relative;
+}
+
+.cover_crop_img {
+    display: block;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: white;
+}
+
+#Project1:hover .overlay,
+#Project2:hover .overlay,
+#Project3:hover .overlay {
+    opacity: 1;
+}
+
+.caption {
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* .content-projectHolder {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-flow: wrap;
-}
+} */
 
-.project--1, 
+/* .project--1, 
 .project--2,
 .project--3{
     width: 700px;
@@ -168,23 +210,16 @@ html {
     margin: 30px auto;
     text-align: center;
     padding-bottom: 20px;
-    /* border: 5px solid black; */
-}
+    border: 5px solid black;
+} */
 
 .shortcuts {
     text-align: center;
     font-size: 25px;
 }
 
-.resume_btn {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 0.25%;
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    opacity: 0.85;
-    cursor: pointer;
+.btn.btn-dark {
+    font-family: 'Piazzolla', serif; 
 }
 
 .prev, .next {

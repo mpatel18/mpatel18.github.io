@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,41 +25,61 @@
             </ul>
         </div>
         <div class ="content-home" id ="Home"> 
-            <h2>Hi I'm Meekit Patel,<br></h2>
+            <h2>Hi I'm Meekit Patel,</h2>
             <p>A full stack web developer</p>
         </div>
         <div class ="content-project" id ="Projects"> 
             <h1>Portfolio</h1>
-            <div class ="content-projectHolder">
-                <div data-aos= "fade-right" class ="project--1">
-                    <div class ="slideshow">
+            <div class ="container-fluid">
+                <div class="row row-cols-1 no-gutters">
+                    <div data-aos= "fade-right" class ="col-lg-6 no-gutters" id ="Project1">
+                        <!-- <div class ="slideshow">
+                            <img name ="cover_crop_img" src ="src/img/cover_crop_img1.PNG" width ="100%">
+                            <a class="prev" onclick="slideTo('cover_crop', -1)">&#10094;</a>
+                            <a class="next" onclick="slideTo('cover_crop', 1)">&#10095;</a>
+                        </div>
+                        <div class ="project-caption">
+                            <p>Economic Evaluator</p>
+                            <p style="font-size: 13px;">&#9746 Source Code Private</p>
+                        </div> -->
                         <img name ="cover_crop_img" src ="src/img/cover_crop_img1.PNG" width ="100%">
-                        <a class="prev" onclick="slideTo('cover_crop', -1)">&#10094;</a>
-                        <a class="next" onclick="slideTo('cover_crop', 1)">&#10095;</a>
+                        <div class="overlay">
+                            <div class ="caption">
+                                Economic Evaluator
+                            </div>
+                        </div>
                     </div>
-                    <div class ="project-caption">
-                        <p>Economic Evaluator</p>
-                        <p style="font-size: 13px;">&#9746 Source Code Private</p>
-                    </div>
-                </div>
-                <div data-aos= "fade-left" class ="project--2">
-                    <div class ="slideshow">
+                    <div data-aos= "fade-left" class ="col-lg-6 no-gutters" id ="Project2">
+                        <!-- <div class ="slideshow">
+                            <img name ="hexconnect_img" src ="src/img/hexconnect_img1.PNG" width ="100%">
+                            <a class="prev" onclick="slideTo('hexconnect', -1)">&#10094;</a>
+                            <a class="next" onclick="slideTo('hexconnect', 1)">&#10095;</a>
+                        </div>
+                        <div class ="project-caption">
+                            <p>HexConnect</p>
+                            <p style="font-size: 13px;">&#9746 Source Code Private</p>
+                        </div> -->
                         <img name ="hexconnect_img" src ="src/img/hexconnect_img1.PNG" width ="100%">
-                        <a class="prev" onclick="slideTo('hexconnect', -1)">&#10094;</a>
-                        <a class="next" onclick="slideTo('hexconnect', 1)">&#10095;</a>
+                        <div class="overlay">
+                            <div class ="caption">
+                                HexConnect
+                            </div>
+                        </div>
                     </div>
-                    <div class ="project-caption">
-                        <p>HexConnect</p>
-                        <p style="font-size: 13px;">&#9746 Source Code Private</p>
-                    </div>
-                </div>
-                <div data-aos= "fade-right" class ="project--3">
-                    <div class ="slideshow">
+                    <div data-aos= "fade-right" class ="col-lg-6 no-gutters" id ="Project3">
+                        <!-- <div class ="slideshow">
+                            <img name ="sevice_site_template" src ="src/img/service_site_template_img1.PNG" width ="100%">
+                        </div>
+                        <div class ="project-caption">
+                            <p>Service Site Template</p>
+                            <button class ="source_code" style="font-size: 13px;" onclick="location.href='https://github.com/mpatel18/Service-Site'" type="button">Source Code</button>
+                        </div> -->
                         <img name ="sevice_site_template" src ="src/img/service_site_template_img1.PNG" width ="100%">
-                    </div>
-                    <div class ="project-caption">
-                        <p>Service Site Template</p>
-                        <button class ="source_code" style="font-size: 13px;" onclick="location.href='https://github.com/mpatel18/Service-Site'" type="button">Source Code</button>
+                        <div class="overlay">
+                            <div class ="caption">
+                                Service Site Template
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,7 +96,7 @@
                         games to implmenting new technologies. 
                     </p>
                     <a href="/src/files/Meekit Patel - Resume - 2020.10.7.pdf" download="Meekit_Patel_Resume">
-                        <button class ="resume_btn" type ="submit">Resume</button>
+                        <button type="button" class="btn btn-dark" type="submit">Resume</button>
                     </a>
                 </div>
             </div>
