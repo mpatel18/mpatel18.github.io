@@ -239,7 +239,8 @@ html {
         font-size: 14px;
     }
 
-    .content-connect {
+    .content-connect,
+    .content-home {
         padding: 20%;
     }
 }
