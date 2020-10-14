@@ -1,8 +1,8 @@
 // Function to Scroll Document to the top
-function returnTop(){
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
-}
+// function returnTop(){
+//     document.body.scrollTop = 0; 
+//     document.documentElement.scrollTop = 0; 
+// }
 
 //Function to slide through images 
 // var cover_crop_counter = 0; 
