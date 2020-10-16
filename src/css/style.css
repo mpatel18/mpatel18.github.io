@@ -72,30 +72,26 @@ html {
 
 .content-home,
 .content-project,
-.content-connect,
-.content-about {
+.content-connect {
     width: 100%;
     text-align: center;
 }
 
-.content-about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 10%;
-}
+/* .content-about {
+} */
 
 #About {
     text-align: center;
     padding-top: 10%;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .about {
-    width: 50%;
-    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
 }
 
 .about p {
@@ -115,7 +111,7 @@ html {
     font-family: 'Noto Sans', sans-serif;
     font-size: 40px;
     padding-top: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 #Project1,
@@ -223,6 +219,12 @@ html {
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .about {
+        width: 80%;
+    }
+}
  
 @media screen and (max-width: 540px){
     .content-home h2, 
@@ -242,5 +244,9 @@ html {
     .content-connect,
     .content-home {
         padding: 20%;
+    }
+
+    #About {
+        padding-bottom: 25px;
     }
 }
