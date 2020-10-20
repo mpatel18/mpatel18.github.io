@@ -137,7 +137,10 @@ html {
 
 #Project1:hover .overlay,
 #Project2:hover .overlay,
-#Project3:hover .overlay {
+#Project3:hover .overlay,
+#Project4:hover .overlay,
+#Project5:hover .overlay,
+#Project6:hover .overlay {
     opacity: 1;
 }
 
