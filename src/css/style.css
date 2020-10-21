@@ -48,12 +48,13 @@ html {
 
 .content-connect h1 {
     font-family: 'Noto Sans', sans-serif;
+    text-decoration: underline;
 }
 
 .content-home h2 { 
     font-size: 60px;
     position: relative;
-    animation: text 3s 1;
+    animation: text 3s ease-in-out 0.05s 1;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -65,9 +66,9 @@ html {
     position: relative;
 }
 
-.content-connect h2,
 .content-project h1 {
     font-size: 30px;
+    text-decoration: underline;
 }
 
 .content-home,
@@ -82,6 +83,7 @@ html {
     padding-top: 10%;
     padding-bottom: 50px;
     font-family: 'Noto Sans', sans-serif;
+    text-decoration: underline;
 }
 
 .about {
