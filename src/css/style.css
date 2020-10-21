@@ -54,11 +54,7 @@ html {
 .content-home h2 { 
     font-size: 60px;
     position: relative;
-<<<<<<< HEAD
     animation: text 3s ease-in-out 1;
-=======
-    animation: text 3s ease 1;
->>>>>>> 101caaa85d0865268e69333f38b5363a68d1f0c3
     font-family: 'Noto Sans', sans-serif;
 }
 
