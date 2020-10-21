@@ -54,7 +54,7 @@ html {
 .content-home h2 { 
     font-size: 60px;
     position: relative;
-    animation: text 3s ease-in-out 0.05s 1;
+    animation: text 3s ease-in-out 1;
     font-family: 'Noto Sans', sans-serif;
 }
 

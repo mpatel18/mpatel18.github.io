@@ -41,7 +41,7 @@
       </section>
       <section class ="content-project" id ="Projects"> 
           <h1>Portfolio</h1>
-          <div data-aos="fade-down" class ="container-fluid">
+          <div data-aos="zoom-out" class ="container-fluid">
             <div class="row row-cols-1 no-gutters">
                 <div class ="col-xl-4 no-gutters" id ="Project1">
                     <img name ="cover_crop_img" src ="src/img/cover_crop_mockup.png" width="100%" height="auto">
@@ -315,7 +315,9 @@
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+          easing: 'ease-in-out'
+        });
         feather.replace();
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
