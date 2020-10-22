@@ -41,7 +41,7 @@ function draw() {
     }
     
     context.fillStyle = "white"; 
-    context.font = "30px Arial";
+    context.font = "50px Arial";
     context.textAlign = "center";
     context.fillText("Hi I'm Meekit Patel", canvas.width/2, canvas.height/2); 
 }
