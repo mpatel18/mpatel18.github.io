@@ -41,9 +41,9 @@ function draw() {
     }
     
     context.fillStyle = "white"; 
-    context.font = "50px Arial";
+    context.font = "100px Noto Sans";
     context.textAlign = "center";
-    context.fillText("Hi I'm Meekit Patel", canvas.width/2, canvas.height/2); 
+    context.fillText("Hello I'm Meekit Patel", (canvas.width/2) - 15, (canvas.height/2)); 
 }
 
 requestAnimationFrame(draw);
