@@ -7,11 +7,14 @@ $('.navbar-nav li a').on('click', function(){
 
 //Create Canvas Background 
 const STAR_COUNT = 200; 
+const mediaQuery = window.matchMedia('(max-width: 375px)'); 
+
 let dpi = window.devicePixelRatio; 
 
 var canvas = document.getElementById('Home'),
     context = canvas.getContext('2d');
 
+//Resize canvas to fit different screens
 function resize(){
     let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2); 
     let style_width = +getComputedStyle(canvas).getPropertyValue("width").slice(0, -2); 
@@ -20,8 +23,8 @@ function resize(){
     canvas.setAttribute('width', style_width * dpi); 
 }
 
-function draw() {
-    resize(); 
+//Randomly generate stars for Starfield background
+function starfield(){
 
     for (var i = 0; i < STAR_COUNT; i++) {
         x = Math.random() * canvas.width;
@@ -39,11 +42,25 @@ function draw() {
         context.fillStyle = "hsla(200,100%,50%,0.8)";
         context.fill();
     }
-    
+}
+
+//Add title to canvas
+function text() {
     context.fillStyle = "white"; 
-    context.font = "100px Noto Sans";
+    if(mediaQuery.matches){
+        context.font = "50px Noto Sans";
+    } else {
+        context.font = "100px Noto Sans";
+    }
     context.textAlign = "center";
     context.fillText("Hello I'm Meekit Patel", (canvas.width/2) - 15, (canvas.height/2)); 
+}
+
+//Draw on canvas
+function draw() {
+    resize(); 
+    starfield(); 
+    text(); 
 }
 
 requestAnimationFrame(draw);
