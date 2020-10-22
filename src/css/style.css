@@ -25,12 +25,20 @@ html {
 }
 
 .content-home {
-    padding: 20%;
+    /* padding: 20%; */
+    height: 100vh;
     position: relative;
     color: white;
 }
 
-.content-home::before {
+/* .title {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+} */
+
+/* .content-home::before {
     background-image: url(/src/img/header.png);
     background-size: 100% 100%;
     content: "";
@@ -40,7 +48,7 @@ html {
     bottom: 0px;
     left: 0px;
     opacity: 0.91;
-}
+} */
 
 .content-connect {
     padding: 15%;
@@ -76,6 +84,14 @@ html {
 .content-connect {
     width: 100%;
     text-align: center;
+}
+
+.content-about {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #About {
@@ -212,6 +228,12 @@ html {
     background-color: #000;
 }
 
+canvas { 
+    height: 100vh; 
+    width: 100%; 
+    display: block;
+}
+
 @keyframes text {
     0%{
         color: darkslategray;
@@ -244,7 +266,7 @@ html {
     .content-project h1, 
     .content-connect h1,
     #About {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .content-home p,
@@ -261,5 +283,9 @@ html {
 
     #About {
         padding-bottom: 25px;
+    }
+
+    .content-about {
+        height: 100vh;
     }
 }
