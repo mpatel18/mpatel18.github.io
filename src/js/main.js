@@ -7,7 +7,7 @@ $('.navbar-nav li a').on('click', function(){
 
 //Create Canvas Background 
 const STAR_COUNT = 200; 
-const mediaQuery = window.matchMedia('(max-width: 375px)'); 
+const mediaQuery = window.matchMedia('(max-width: 375px'); 
 
 let dpi = window.devicePixelRatio; 
 
@@ -53,7 +53,7 @@ function text() {
         context.font = "100px Noto Sans";
     }
     context.textAlign = "center";
-    context.fillText("Hello I'm Meekit Patel", (canvas.width/2) - 15, (canvas.height/2)); 
+    context.fillText("Hello I'm Meekit Patel", (canvas.width/2), (canvas.height/2)); 
 }
 
 //Draw on canvas
