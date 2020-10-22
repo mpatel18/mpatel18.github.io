@@ -14,6 +14,17 @@ let dpi = window.devicePixelRatio;
 var canvas = document.getElementById('Home'),
     context = canvas.getContext('2d');
 
+WebFontConfig = {
+    google:{ families: ['Cousine'] },
+    active: function(){text();},
+};
+(function(){
+    var wf = document.createElement("script");
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
+    wf.async = 'true';
+    document.head.appendChild(wf);
+})();
+
 //Resize canvas to fit different screens
 function resize(){
     let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2); 
@@ -48,9 +59,9 @@ function starfield(){
 function text() {
     context.fillStyle = "white"; 
     if(mediaQuery.matches){
-        context.font = "50px Noto Sans";
+        context.font = "50px Cousine";
     } else {
-        context.font = "100px Noto Sans";
+        context.font = "100px Cousine";
     }
     context.textAlign = "center";
     context.fillText("Hello I'm Meekit Patel", (canvas.width/2), (canvas.height/2)); 
@@ -60,7 +71,6 @@ function text() {
 function draw() {
     resize(); 
     starfield(); 
-    text(); 
 }
 
 requestAnimationFrame(draw);
