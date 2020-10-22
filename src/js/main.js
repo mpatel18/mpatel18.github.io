@@ -6,7 +6,7 @@ $('.navbar-nav li a').on('click', function(){
 });
 
 //Create Canvas Background 
-const STAR_COUNT = 200; 
+const STAR_COUNT = (window.innerWidth + window.innerHeight)/2; 
 const mediaQuery = window.matchMedia('(max-width: 375px'); 
 
 let dpi = window.devicePixelRatio; 
@@ -59,9 +59,9 @@ function starfield(){
 function text() {
     context.fillStyle = "white"; 
     if(mediaQuery.matches){
-        context.font = "50px Cousine";
+        context.font = "40px Cousine";
     } else {
-        context.font = "100px Cousine";
+        context.font = "70px Cousine";
     }
     context.textAlign = "center";
     context.fillText("Hello I'm Meekit Patel", (canvas.width/2), (canvas.height/2)); 

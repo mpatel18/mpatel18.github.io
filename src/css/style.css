@@ -24,32 +24,6 @@ html {
     margin-right: 15px;
 }
 
-.content-home {
-    /* padding: 20%; */
-    height: 100vh;
-    position: relative;
-    color: white;
-}
-
-/* .title {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-} */
-
-/* .content-home::before {
-    background-image: url(/src/img/header.png);
-    background-size: 100% 100%;
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.91;
-} */
-
 .content-connect {
     padding: 15%;
 }
@@ -59,27 +33,11 @@ html {
     text-decoration: underline;
 }
 
-.content-home h2 { 
-    font-size: 60px;
-    position: relative;
-    animation: text 3s ease-in-out 1;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.content-home p{
-    font-size: 25px;
-    padding-bottom: 5px;
-    font-family: 'Piazzolla', serif;
-    display: block;
-    position: relative;
-}
-
 .content-project h1 {
     font-size: 30px;
     text-decoration: underline;
 }
 
-.content-home,
 .content-project,
 .content-connect {
     width: 100%;
@@ -133,11 +91,6 @@ html {
 #Project2,
 #Project3 {
     position: relative;
-}
-
-.cover_crop_img {
-    display: block;
-    height: auto;
 }
 
 .overlay {
@@ -234,7 +187,7 @@ canvas {
     display: block;
 }
 
-@keyframes text {
+/* @keyframes text {
     0%{
         color: darkslategray;
         margin-bottom: -20px;
@@ -242,7 +195,7 @@ canvas {
     30% {
         margin-bottom: 10px;
     }
-}
+} */
 
 @media screen and (min-width: 2560px){
     .about {
@@ -262,22 +215,19 @@ canvas {
         padding-bottom: 10%;
     }
 
-    .content-home h2, 
     .content-project h1, 
     .content-connect h1,
     #About {
         font-size: 20px;
     }
 
-    .content-home p,
     .about p,
     .shortcuts,
     .caption h4 {
         font-size: 14px;
     }
 
-    .content-connect,
-    .content-home {
+    .content-connect {
         padding: 20%;
     }
 
