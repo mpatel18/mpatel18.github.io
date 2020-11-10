@@ -14,17 +14,6 @@ let dpi = window.devicePixelRatio;
 var canvas = document.getElementById('Home'),
     context = canvas.getContext('2d');
 
-WebFontConfig = {
-    google:{ families: ['Cousine'] },
-    active: function(){text();},
-};
-(function(){
-    var wf = document.createElement("script");
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
-    wf.async = 'true';
-    document.head.appendChild(wf);
-})();
-
 //Resize canvas to fit different screens
 function resize(){
     let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2); 
@@ -71,6 +60,17 @@ function text() {
 function draw() {
     resize(); 
     starfield(); 
+
+    WebFontConfig = {
+        google:{ families: ['Cousine'] },
+        active: function(){text();},
+    };
+    (function(){
+        var wf = document.createElement("script");
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
+        wf.async = 'true';
+        document.head.appendChild(wf);
+    })();
 }
 
 requestAnimationFrame(draw);

@@ -24,18 +24,18 @@ html {
     margin-right: 15px;
 }
 
+.content-project h1, 
+#About, 
+.content-connect h1 {
+    font-family: 'Josefin Sans', sans-serif
+}
+
 .content-connect {
     padding: 15%;
 }
 
-.content-connect h1 {
-    font-family: 'Noto Sans', sans-serif;
-    text-decoration: underline;
-}
-
 .content-project h1 {
     font-size: 30px;
-    text-decoration: underline;
 }
 
 .content-project,
@@ -56,8 +56,6 @@ html {
     text-align: center;
     padding-top: 10%;
     padding-bottom: 50px;
-    font-family: 'Noto Sans', sans-serif;
-    text-decoration: underline;
 }
 
 .about {
@@ -81,7 +79,6 @@ p {
 }
 
 .content-project h1 {
-    font-family: 'Noto Sans', sans-serif;
     font-size: 40px;
     padding-top: 10%;
     padding-bottom: 5%;
