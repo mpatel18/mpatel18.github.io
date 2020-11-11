@@ -187,16 +187,6 @@ canvas {
     display: block;
 }
 
-/* @keyframes text {
-    0%{
-        color: darkslategray;
-        margin-bottom: -20px;
-    }
-    30% {
-        margin-bottom: 10px;
-    }
-} */
-
 @media screen and (min-width: 2560px){
     .about {
         width: 30%;
@@ -218,7 +208,7 @@ canvas {
     .content-project h1, 
     .content-connect h1,
     #About {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .about p,

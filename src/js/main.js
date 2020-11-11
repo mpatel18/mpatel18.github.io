@@ -7,12 +7,23 @@ $('.navbar-nav li a').on('click', function(){
 
 //Create Canvas Background 
 const STAR_COUNT = (window.innerWidth + window.innerHeight)/2; 
-const mediaQuery = window.matchMedia('(max-width: 375px'); 
+const mediaQuery = window.matchMedia('(max-width: 375px)'); 
 
 let dpi = window.devicePixelRatio; 
 
 var canvas = document.getElementById('Home'),
     context = canvas.getContext('2d');
+
+WebFontConfig = {
+    google:{ families: ['Cousine'] },
+    active: function(){text();},
+};
+(function(){
+    var wf = document.createElement("script");
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
+    wf.async = 'true';
+    document.head.appendChild(wf);
+})();
 
 //Resize canvas to fit different screens
 function resize(){
@@ -60,17 +71,6 @@ function text() {
 function draw() {
     resize(); 
     starfield(); 
-
-    WebFontConfig = {
-        google:{ families: ['Cousine'] },
-        active: function(){text();},
-    };
-    (function(){
-        var wf = document.createElement("script");
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
-        wf.async = 'true';
-        document.head.appendChild(wf);
-    })();
 }
 
 requestAnimationFrame(draw);
