@@ -103,7 +103,7 @@ p {
     width: 100%;
     opacity: 0;
     transition: 0.8s ease;
-    background-color: white;
+    background-color: #dcdcdc;
 }
 
 #Project1:hover .overlay,
