@@ -74,3 +74,11 @@ function draw() {
 }
 
 requestAnimationFrame(draw);
+
+//Add swapable project categories 
+var categories = document.getElementById('categories'),
+    game = categories.getElementsById('game'),
+    projects = document.getElementById('project'),
+    different_proj = projects.getElementsByTagName('*');
+
+
